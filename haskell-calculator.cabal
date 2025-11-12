@@ -57,6 +57,12 @@ extra-doc-files:    CHANGELOG.md
 common warnings
     ghc-options: -Wall
 
+library
+    exposed-modules:  Expr, Parser
+    build-depends:    base >=4.7 && <5
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
 executable haskell-calculator
     -- Import common warning flags.
     import:           warnings
@@ -71,7 +77,8 @@ executable haskell-calculator
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.18.3.0
+    build-depends:    base >=4.7 && <5,
+                      haskell-calculator
 
     -- Directories containing source files.
     hs-source-dirs:   app
