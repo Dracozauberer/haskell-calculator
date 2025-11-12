@@ -1,0 +1,29 @@
+# Cabal build artifacts
+dist/
+dist-newstyle/
+cabal-dev/
+.cabal-sandbox/
+cabal.sandbox.config
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.HTF/
+
+# Stack (caso use no futuro)
+.stack-work/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# GHC
+.ghc.environment.*
